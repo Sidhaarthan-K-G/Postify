@@ -1,0 +1,125 @@
+
+.main-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content notification"
+    "footer footer footer";
+    gap: 3px;
+    background-color: white;
+}
+
+.heading{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    grid-area: header;
+}
+
+.navigation{
+    display: flex;
+    gap: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+    grid-area: footer;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 15px;
+    border-width: 0px;
+    color: white;
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.btn:hover{
+    transform: translateX(8px);
+}
+
+.content{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+    grid-area: content;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.notification{
+    grid-area: notification;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.create{
+    font-size: 30px;
+    transition: all ease 0.3s;
+}
+.create:hover{
+    transform: translateY(-8px);
+}
+
+.user{
+    font-size: 30px;
+    transition: all ease 0.3s;
+}
+.user:hover{
+    transform: translateY(-8px);
+}
+
+span{
+    font-size: 20px;
+}
+.postcard{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.explore{
+}

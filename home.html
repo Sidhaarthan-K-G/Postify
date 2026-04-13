@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body id="body">
+    <script src="home.js" defer></script>
+    <div class="main-container" id="main-container">
+        <header class="heading" id="heading">
+            <i class="title fa-solid fa-file-lines"> Postify</i>
+            <nav class="navigation">
+                <button class="theme" id="theme"><i class="fa-solid fa-sun"></i></button>
+                <a href="#"><i class="create fa-solid fa-pen-to-square" id="create"></i></a>
+                <a href="#"><i class="user fa-solid fa-user" id="user"></i></a>
+            </nav>
+        </header>
+        <div class="sidebar" id="sidebar">
+            <button id="btn1" class="btn btn1"><i class="fa-solid fa-home"></i><a href="#" id="home"> Home</a></button>
+            <button id="btn2" class="btn btn2"><i class="fa-solid fa-bookmark"></i><a href="#" id="library"> Library</a></button>
+            <button id="btn3" class="btn btn3"><i class="fa-solid fa-user"></i><a href="#" id="profile"> Profile</a></button>
+            <button id="btn4" class="btn btn4"><i class="fa-solid fa-pen-to-square"></i><a href="#" id="stories"> Stories</a></button>
+        </div>
+        <div class="content" id="content">
+            <h2 class="h-2"><span class="explore">Explore the Posts</span></h2>
+            <div class="posts" id="posts">
+
+            </div>
+        </div>
+        <div class="notification" id="notification">
+            <h2 class="h-2"><i class="fa-solid fa-bell"></i> Notifications</h2>
+        </div>
+        <footer class="footer" id="footer">
+            <p class="p-f">©Postify - 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
