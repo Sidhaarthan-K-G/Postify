@@ -41,14 +41,14 @@
 //     user.style.color = "black";
 // });
 let posts = document.getElementById("posts");
-let options = {
+let explore = {
     method : "GET",
     headers : {
         "Content-Type" : "application/json",
         Accept : "application/json",
     }
 }
-fetch("https://jsonplaceholder.typicode.com/posts", options)
+fetch("https://dev.to/api/articles", explore)
 .then((response) => {
     return response.json();
 })
@@ -63,5 +63,31 @@ fetch("https://jsonplaceholder.typicode.com/posts", options)
         a.appendChild(b);
         a.appendChild(c);
         posts.appendChild(a);
+    }
+});
+
+
+let notification = document.getElementById("not-con");
+let message = {
+    method : "GET",
+    headers : {
+        "Content-Type" : "application/json",
+        Accept : "application/json" 
+    }
+
+}
+fetch("https://dummyjson.com/posts", message)
+.then((response) => {
+    return response.json();
+})
+.then((data) => {
+    let pl = data.posts;
+    for(let i = 0 ; i < pl.length ; i++){
+        let a = document.createElement("div");
+        let b = document.createElement("h4");
+        b.textContent = pl[i].title;
+        a.appendChild(b);
+        a.classList.add("message")
+        notification.appendChild(a);
     }
 });

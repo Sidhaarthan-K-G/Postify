@@ -79,6 +79,9 @@ a{
 }
 
 .notification{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
     grid-area: notification;
     background-color: black;
     color: white;
@@ -115,11 +118,25 @@ span{
     color: black;
     border-radius: 10px;
 }
+.message{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
 .posts{
     display: flex;
     flex-direction: column;
     gap: 5px;
     position: relative;
 }
-.explore{
+.not-con{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
 }
+/* .explore{
+    position: fixed;
+    z-index: 1;
+} */
